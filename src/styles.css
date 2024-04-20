@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+.App{
+  --focus-background:#6600cc; 
+  --head-color:white;
+  max-width:1400px;
+  margin:0 auto;
+  
+}
+.chats,.posts,.Chats,.Header{
+   background:#0d001a;
+   border-right:1px solid #cccccc;
+}
+.Messages,.Messages .user-head{
+background: #0d001a;
+}
+.Header ,.Messages .head{
+  color:#cccccc;
+}
+.Header .search,.Header input{
+  background:#d9d9d9;
+}
+.chats h3,.posts h3{
+  color:#cccccc;
+}
+.Chats{
+ color:#cccccc;
+ border-bottom:1px solid #cccccc;
+}
+.reciever p{
+  background: #cccccc;
+}
+.input-container input{
+  background: #d9d9d9;
+}
+.chats h3,.sender p,.posts h3{ 
+  background:#4d0099;;
+}
+.sender p{
+   color:#d9d9d9
+}
+.user-head{
+  background:#1a0033;
+  color:#cccccc;
+  border-bottom:1px solid #cccccc;
+}
+*{
+  margin:0;
+
+  box-sizing: border-box;
+}
+.Voice{
+   position:fixed;
+   z-index:200;
+   right:5%;
+   bottom:5%;
+   background: white;
+   padding:20px;
+   border-radius:50%;
+}
+.mic-icon{
+   font-size:60px;
+   color:var(--focus-background);
+
+}
+@media screen and(max-width:600px){
+   .chats,.messages,.posts{
+    border:2px solid red;
+   }
+}
+@media screen and (min-width:600px){
+ .power{
+    display:none;
+ }
+}

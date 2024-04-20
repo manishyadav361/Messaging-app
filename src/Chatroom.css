@@ -1,0 +1,110 @@
+.Chatroom{
+    background: #f2f2f2;
+    height:100vh;
+ z-index:300;
+    
+}
+.Header{
+   min-width:100%;
+  
+   background:#0d001a;
+}
+.chat{
+    display:flex;
+    z-index:300;
+}
+.chats{
+    width:25%;
+    background: #f2f2f2;
+    z-index:200; 
+    overflow-y:scroll;
+    background:#0d001a;
+}
+.messages{
+    background:white;
+    width:45%;
+    height:100vh;
+    z-index:101;
+    border-right:0.5px solid #f2f2f2;
+}
+.posts{
+    min-width:30%;
+    min-height:100vh;
+    z-index:200;
+    
+    overflow:hidden;
+    position: relative;
+}
+.posts h3{
+ position:sticky;
+ top:0%;
+}
+.chats h3,.posts h3,.messages .head{
+     width:100%;
+     text-align:center;
+     font-size:35px;
+     font-weight:900;
+     padding:20px;
+     color:white;
+     background:var(--focus-background);
+}
+@media screen and (max-width:600px){
+    .chats h3,.posts h3{
+         padding:6px;
+         font-weight:400;
+    }
+    .chats{
+        z-index:1; 
+        height:100vh;  
+    }
+    .messages{
+         z-index:300;
+         transition:0.2s;
+         border:none;
+    }
+    .chats,.posts,.messages{
+        min-width:100%;
+        border:none;  
+    }
+    .chat{
+        position:sticky;
+        top:0%;
+    }
+    .Chatroom{
+        position:relative;
+        overflow:hidden;
+        
+    }
+    
+    .messages{
+        height:82vh;
+        transform:translateY(-17%);
+        
+    }
+    .messages .head{
+          z-index:500;
+    }
+    .posts{
+          height:100vh;
+    }
+    .posts h3{
+         z-index:400;
+    } 
+    .remove{
+        
+        transform:translate(-50%,-8%);
+        
+    }
+    .add{
+        transform:translateX(0%);
+        
+    }
+}
+@media screen and (width:1024px){
+     .chats{
+         width:35%;
+     }
+     .Chats{
+          padding:5px;
+     }
+}

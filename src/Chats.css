@@ -1,0 +1,48 @@
+.Chats{
+   display:flex;
+   background:white;
+   width:100%;
+   padding:20px;
+   align-items:center;
+   border-bottom: 2px solid #f2f2f2;
+   background:#0d001a;
+}
+.Chats .span{
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  background:green;
+  margin:10px;
+  
+}
+.Chats .icon{
+    width:80px;
+    height:80px;
+    margin:3px 14px;
+    z-index:1;
+}
+.Chats .chat-name{
+    font-size: 22px;
+    font-weight:500;
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+    .Chats{
+      padding:8px 4px ;
+      border-bottom:0.5px solid #f2f2f2;
+    }
+    .Chats .span{
+       width:10px;
+       height:10px;
+       margin:5px;
+    }
+    .chats .chat-name{
+         font-weight:400;
+         font-size:20px;
+    }
+    .Chats .icon{
+        width:40px;
+        height:40px;
+        margin-left:4px;
+    }
+}

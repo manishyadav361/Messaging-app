@@ -1,0 +1,51 @@
+.Profile{
+  display:flex;
+  height:100vh;
+  justify-content: center;
+  align-items:center;
+  background: #f2f2f2;
+  width:100%;
+  z-index:-10;
+  top:0%;
+  position:fixed;
+}
+.name,.status,.image{
+  display:flex;
+  margin:0px 10px;
+  background:white;
+  padding:8px 5px;
+  border-radius:6px;
+  margin:12px 0px;;
+}
+.Profile input{
+ border:none;
+ outline-style:none;
+ 
+ margin-left:auto;
+} 
+.Profile h3{
+  margin-right:8px;
+  color:var(--focus-background);
+  font-weight:500;
+}
+.avatar{
+  display:flex;
+  justify-content:center;
+  margin: 20px auto;
+}
+.avatar{
+ min-width:100px;
+ min-height:100px;
+}
+.buttons{
+  display:flex;
+   justify-content:center;
+}
+.details-update input{
+  pointer-events: all;
+  border:none;
+  cursor:pointer;
+  outline-style:none;
+  margin-left:auto;
+  padding:5px;
+}
